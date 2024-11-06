@@ -68,7 +68,81 @@
         border-top: 0 solid transparent;
       }
     </style>
-    <script src="https://philozon.eloz.io/mtc.js" data-source="mautic"></script>
+    <script>
+      (function (w, d, t, u, n, a, m) {
+        w["ElozTrackingObject"] = n;
+        (w[n] =
+          w[n] ||
+          function () {
+            (w[n].q = w[n].q || []).push(arguments);
+          }),
+          (a = d.createElement(t)),
+          (m = d.getElementsByTagName(t)[0]);
+        a.async = 1;
+        a.src = u;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, "script", "https://philozon.eloz.io/mtc.js", "mt");
+      mt("send", "pageview");
+
+      (function (w, d, t, u, n, a, m) {
+        w["ElozWebChatObject"] = n;
+        (w[n] =
+          w[n] ||
+          function () {
+            (w[n].q = w[n].q || []).push(arguments);
+          }),
+          (a = d.createElement(t)),
+          (m = d.getElementsByTagName(t)[0]),
+          (a.async = 1);
+        a.src = u;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://philozon.eloz.io/eloz-webchat.js",
+        "wc"
+      );
+      wc("philozon");
+    </script>
+    <script>
+      (function (w, d, t, u, n, a, m) {
+        w["ElozTrackingObject"] = n;
+        (w[n] =
+          w[n] ||
+          function () {
+            (w[n].q = w[n].q || []).push(arguments);
+          }),
+          (a = d.createElement(t)),
+          (m = d.getElementsByTagName(t)[0]);
+        a.async = 1;
+        a.src = u;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, "script", "https://philozon.eloz.io/mtc.js", "mt");
+      mt("send", "pageview");
+
+      (function (w, d, t, u, n, a, m) {
+        w["ElozWebChatObject"] = n;
+        (w[n] =
+          w[n] ||
+          function () {
+            (w[n].q = w[n].q || []).push(arguments);
+          }),
+          (a = d.createElement(t)),
+          (m = d.getElementsByTagName(t)[0]),
+          (a.async = 1);
+        a.src = u;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://philozon.eloz.io/eloz-webchat.js",
+        "wc"
+      );
+      wc("philozon");
+    </script>
+
     <script data-source="mautic">
       disable_notification = true;
     </script>
