@@ -6,6 +6,41 @@
     <title>Document</title>
   </head>
   <body>
-    test
+    Example
+    <script
+      type="text/javascript"
+      src="https://test.eloz.io/form/generate.js?id=5"
+    ></script>
   </body>
 </html>
+<script>
+  (function (w, d, t, u, n, a, m) {
+    w["ElozTrackingObject"] = n;
+    (w[n] =
+      w[n] ||
+      function () {
+        (w[n].q = w[n].q || []).push(arguments);
+      }),
+      (a = d.createElement(t)),
+      (m = d.getElementsByTagName(t)[0]);
+    a.async = 1;
+    a.src = u;
+    m.parentNode.insertBefore(a, m);
+  })(window, document, "script", "https://test.eloz.io/mtc.js", "mt");
+  mt("send", "pageview");
+
+  (function (w, d, t, u, n, a, m) {
+    w["ElozWebChatObject"] = n;
+    (w[n] =
+      w[n] ||
+      function () {
+        (w[n].q = w[n].q || []).push(arguments);
+      }),
+      (a = d.createElement(t)),
+      (m = d.getElementsByTagName(t)[0]),
+      (a.async = 1);
+    a.src = u;
+    m.parentNode.insertBefore(a, m);
+  })(window, document, "script", "https://test.eloz.io/eloz-webchat.js", "wc");
+  wc("test");
+</script>
